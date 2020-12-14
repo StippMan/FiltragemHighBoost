@@ -22,10 +22,11 @@ def convolution(img):
             for kernel_row in kernel:
                 for element_idx, element in enumerate(kernel_row):
                     accumulator += element * img_box[element_idx]
-			
-			for z in pixel:
-				z = accumulator
-	return img
+
+            for z in pixel:
+                z = accumulator
+    return img
+
 
 img_in_filename = "img_in/blurry_moon.tif"
 
